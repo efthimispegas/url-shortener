@@ -1,9 +1,20 @@
-// import express package(commonJS syntax)
 const express = require('express');
-
-// instatiate the express app
 const app = express();
+const dbConfig = require('./src/config/db');
+const env = require('./src/config/constants');
 
-const PORT = process.env.PORT || 3001;
+// Database configuration
+dbConfig();
+
+// Middleware configuration
+app.use(express.json({ extended: false }));
+
+// Routes configuration
+app.use('/api', [
+  require('./src/routes/redirect'),
+  require('./src/routes/url'),
+]);
+
 // Listen for incoming requests
-app.listen(PORT, () => console.log(`server started, listening PORT ${PORT}`));
+const PORT = env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server started, listening PORT ${PORT}`));
