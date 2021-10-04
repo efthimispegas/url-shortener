@@ -1,0 +1,12 @@
+# Self.
+.dockerignore
+
+# Environments.
+env
+
+# Git.
+.git
+.gitignore
+
+# Dependencies.
+node_modules
