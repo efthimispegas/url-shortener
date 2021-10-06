@@ -17,14 +17,22 @@ router.post('/url/shorten', async (req, res) => {
   const { longUrl } = req.body;
   // check if base url is valid
   if (!validUrl.isUri(env.BASE_URL)) {
-    return res.status(401).json({
-      code: 401,
+    return res.status(400).json({
+      code: 400,
       message: 'INVALID BASE URL',
+    });
+  }
+  // Check if the body has the correct form
+  if (!longUrl) {
+    return res.status(400).json({
+      code: 400,
+      message: 'PARAM longUrl IS REQUIRED',
     });
   }
   // if valid, we create the url code
   const urlCode = shortid.generate();
   // check if provided url is valid
+  console.log(longUrl);
   if (validUrl.isUri(longUrl)) {
     try {
       let url = await Url.findOne({ longUrl });
@@ -52,8 +60,8 @@ router.post('/url/shorten', async (req, res) => {
       });
     }
   } else {
-    res.status(401).json({
-      code: 401,
+    res.status(400).json({
+      code: 400,
       message: 'INVALID LONG URL',
     });
   }
