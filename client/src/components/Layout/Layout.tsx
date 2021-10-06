@@ -14,8 +14,9 @@ const useStyles = makeStyles((theme) =>
       margin: theme.spacing(0, 1),
     },
     toolbar: theme.mixins.toolbar,
-    content: {},
-    children: {},
+    children: {
+      minWidth: 900, // TODO: Add responsiveness to children
+    },
   }),
 );
 
@@ -24,7 +25,7 @@ const Layout: React.FC = ({ children }) => {
   return (
     <div>
       <Header />
-      <main className={classes.content}>
+      <main>
         <div className={classes.toolbar} />
         <div className={classes.children}>{children}</div>
       </main>
