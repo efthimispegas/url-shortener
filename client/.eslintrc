@@ -60,13 +60,9 @@
     "no-param-reassign": ["error", { "props": false }],
     "no-nested-ternary": ["off"],
     "no-underscore-dangle": ["off"],
-    "no-unused-vars": [
-      "error",
-      {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_"
-      }
-    ],
+    "no-unused-vars": "off",
+    "no-debugger": "off",
+    "no-return-assign": "off",
     "no-use-before-define": ["off"],
     "object-curly-newline": ["error", { "consistent": true }],
     "object-curly-spacing": ["error", "always"],
@@ -74,6 +70,7 @@
     "promise/no-return-in-finally": ["error", "always"],
     "promise/no-return-wrap": ["error"],
     "react/destructuring-assignment": ["off"],
+    "react/jsx-props-no-spreading": "off",
     "react/forbid-prop-types": ["off", { "forbid": ["object"] }],
     "react/jsx-one-expression-per-line": ["off"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],

@@ -37,4 +37,9 @@ const textGrey: PaletteColorOptions = {
   light: '#CECECE',
 };
 
-export { primary, secondary, error, warning, success, background, textGrey };
+const button: PaletteColorOptions = {
+  main: '#A9CADE',
+  light: '#B7D6E9',
+};
+
+export { primary, secondary, error, warning, success, background, textGrey, button };

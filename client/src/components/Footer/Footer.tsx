@@ -20,15 +20,15 @@ const Footer: React.FC = () => {
   const classes = useStyles();
   return (
     <AppBar position="fixed" color="secondary" variant="outlined" className={classes.footer}>
-      <Grid item container alignItems="center" justify="space-between">
-        <Grid item container xs={3} justify="center">
+      <Grid item container alignItems="center" justifyContent="space-between">
+        <Grid item container xs={3} justifyContent="center">
           <Grid item>
             <Typography className={classes.text} variant="h5" noWrap>
               All rights reserved © 2021
             </Typography>
           </Grid>
         </Grid>
-        <Grid item container xs={6} justify="center">
+        <Grid item container xs={6} justifyContent="center">
           <Grid item>
             <Typography className={classes.text} variant="subtitle2" noWrap>
               Made with{' '}
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid item container xs={3} justify="center">
+        <Grid item container xs={3} justifyContent="center">
           <Grid item>
             <Button variant="text" href="https://github.com/efthimispegas" disableRipple>
               <Typography variant="body2" noWrap>

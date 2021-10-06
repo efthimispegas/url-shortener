@@ -1,6 +1,6 @@
 import React from 'react';
 import { createTheme } from '@material-ui/core/styles';
-import { background, error, primary, secondary, success, textGrey, warning } from './palette';
+import { background, error, primary, secondary, success, textGrey, warning, button } from './palette';
 import typography from './resets';
 import roboto from './font';
 
@@ -8,10 +8,12 @@ declare module '@material-ui/core/styles/createPalette' {
   // eslint-disable-next-line
   interface Palette {
     textGrey: Palette['primary'];
+    button: Palette['primary'];
   }
   // eslint-disable-next-line
   interface PaletteOptions {
     textGrey: PaletteOptions['primary'];
+    button: PaletteOptions['primary'];
   }
 }
 
@@ -24,6 +26,7 @@ const theme = createTheme({
     textGrey,
     success,
     background,
+    button,
     text: {
       primary: '#212121',
     },
