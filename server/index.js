@@ -1,13 +1,15 @@
 const express = require('express');
-const app = express();
 const dbConfig = require('./src/config/db');
 const env = require('./src/config/constants');
+const cors = require('cors');
+const app = express();
 
 // Database configuration
 dbConfig();
 
 // Middleware configuration
 app.use(express.json({ extended: false }));
+app.use(cors());
 
 // Routes configuration
 app.use('/api', [
