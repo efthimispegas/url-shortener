@@ -1,5 +1,6 @@
 import { AppBar, Grid, makeStyles, createStyles, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
+import { title } from '../../data/content/text';
 import logo from '../../assets/logo.svg';
 
 const useStyles = makeStyles((theme) =>
@@ -30,10 +31,10 @@ const Header: React.FC = () => {
           <Grid item>
             <img src={logo} alt="url-shortener-logo" className={classes.logo} />
           </Grid>
-          <Grid item container xs={11} justify="flex-start">
+          <Grid item container xs={11} justifyContent="flex-start">
             <Grid item>
               <Typography variant="h1" noWrap>
-                Free URL Shortener
+                {title}
               </Typography>
             </Grid>
           </Grid>
