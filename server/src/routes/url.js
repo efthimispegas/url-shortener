@@ -29,6 +29,13 @@ router.post('/url/shorten', async (req, res) => {
       message: 'PARAM longUrl IS REQUIRED',
     });
   }
+  // Check if the url provided is already in shortened form
+  if (longUrl.includes('localhost:5000')) {
+    return res.status(400).json({
+      code: 400,
+      message: 'PROVIDED longUrl IS ALREADY CONVERTED',
+    });
+  }
   // if valid, we create the url code
   const urlCode = shortid.generate();
   // check if provided url is valid
