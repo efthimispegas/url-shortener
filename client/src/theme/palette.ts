@@ -9,7 +9,7 @@ const primary: PaletteColorOptions = {
 const secondary: PaletteColorOptions = {
   main: '#A9CADE',
   light: '#EEF5FD',
-  dark: '#977FBE',
+  dark: '#5E8EAC',
   contrastText: '#212121',
 };
 

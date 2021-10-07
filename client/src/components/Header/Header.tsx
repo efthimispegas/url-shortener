@@ -1,7 +1,7 @@
 import { AppBar, Grid, makeStyles, createStyles, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 import { title } from '../../data/content/text';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/svg/logo.svg';
 
 const useStyles = makeStyles((theme) =>
   createStyles({
