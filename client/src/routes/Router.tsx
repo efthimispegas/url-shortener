@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 
 const Router: React.FC = () => (
@@ -8,6 +8,7 @@ const Router: React.FC = () => (
       <Route exact path="/">
         <Home />
       </Route>
+      <Route path="/*" render={() => <Redirect to="/" />} />
     </Switch>
   </BrowserRouter>
 );
