@@ -11,7 +11,10 @@ context('Form', () => {
 
   it('the input value matches the copied URL', () => {
     cy.get('[data-cy="form"]').within(() => {
-      cy.get('input').should('have.class', 'MuiInputBase-input').type(urls.validURL).should('have.value', URL);
+      cy.get('input')
+        .should('have.class', 'MuiInputBase-input')
+        .type(urls.validURL)
+        .should('have.value', urls.validURL);
     });
   });
 
@@ -33,7 +36,7 @@ context('Form', () => {
     });
   });
 
-  it.only('tries to copy the converted URL', () => {
+  it('tries to copy the converted URL', () => {
     let convertedURL = '';
     cy.shorten(urls.validURL);
     cy.get('[data-cy="copy-clipboard-btn"]').click();
