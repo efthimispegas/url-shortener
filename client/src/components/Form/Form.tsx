@@ -67,7 +67,9 @@ const Form: React.FC<FormProps> = ({ onClick, onChange, error, url }) => {
       <Box component="form" minWidth={500} className={classes.box}>
         <Grid container item>
           <TextField
+            autoFocus
             value={url}
+            data-cy="form"
             autoComplete="off"
             variant="outlined"
             onChange={onChange}

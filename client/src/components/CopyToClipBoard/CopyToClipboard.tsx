@@ -52,6 +52,7 @@ const CopyToClipBoard: React.FC<CopyToClipBoardProps> = ({ open, value, onClick 
               margin="dense"
               value={value}
               variant="standard"
+              data-cy="converted-url"
               InputProps={{
                 readOnly: true,
                 disableUnderline: true,
@@ -59,7 +60,14 @@ const CopyToClipBoard: React.FC<CopyToClipBoardProps> = ({ open, value, onClick 
               }}
             />
             <Tooltip title="Text copied!" placement="bottom-start" open={open}>
-              <IconButton edge="end" title="Copy" color="primary" onClick={onClick} aria-label="Copy to clipboard">
+              <IconButton
+                edge="end"
+                title="Copy"
+                color="primary"
+                onClick={onClick}
+                data-cy="copy-clipboard-btn"
+                aria-label="Copy to clipboard"
+              >
                 <img src={copy} className={classes.copy} alt="copy-short-url" />
               </IconButton>
             </Tooltip>
