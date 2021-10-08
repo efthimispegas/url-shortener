@@ -43,7 +43,7 @@
     "curly": ["error", "all"],
     "func-names": ["error", "as-needed"],
     "function-paren-newline": "off",
-    "import/extensions": ["error", "never", { "css": "ignorePackages" }],
+    "import/extensions": "off",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "import/prefer-default-export": ["off"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
