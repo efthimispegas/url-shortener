@@ -32,10 +32,11 @@
     }
   },
   "rules": {
+    "eqeqeq": "off",
     "arrow-body-style": ["off"],
     "implicit-arrow-linebreak": "off",
     "array-bracket-spacing": "off",
-    "max-len": ["warn", { "code": 120 }],
+    "max-len": ["warn", { "code": 120, "ignoreUrls": true }],
     "arrow-parens": ["error", "always"],
     "class-methods-use-this": "off",
     "operator-linebreak": "off",
