@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "env": {
+    "apiUrl": "https://localhost:5000/api",
+    "codeCoverage": {
+      "url": "http://localhost:3000/__coverage__"
+    }
+  },
+  "testFiles": "**/*spec.{js,jsx,ts,tsx}",
+  "projectId": "119sdv",
+  "component": {
+    "componentFolder": "cypress",
+    "testFiles": "**/*spec.{js,jsx,ts,tsx}"
+  }
+}
