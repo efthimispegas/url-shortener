@@ -1,0 +1,9 @@
+This project showcases an overall familiarity with a full stack. For these purposes I have chosen the MERN Stack, using Node with Express for the server and MongoDB with Mongoose for the database. 
+
+The reason why I picked this stack is due to Express server ease of bootstrap and because it diminishes the necessity for context change (only JS). 
+
+I want to point out that, due to the fact that I have been preoccupied in the mornings with my current job, I could only embark on the project during the weekend and maybe some late evenings. Thus the late deliverable. 
+
+Nevertheless, I made sure the outcome can reflect my personality and is a live example of my UI frameworks experience (Material UI, styled etc.) along with my knowledge of latest React conventions.
+
+I hope you can run through the code with ease, if not don't hesitate to contact me for any misconception.
